@@ -1,0 +1,23 @@
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link th:href='@{/CSS/style.css}' rel='stylesheet'>
+  <link th:href='@{/CSS/login.css}' rel='stylesheet'>
+</head>
+<body class='bgi'>
+ <div class='dvv'>
+   <label class='lah' style='color:orange;text-decoration:underline;font-size:2.5vw'>ONLINE BOOKSTORE</label>
+  </div>
+  <hr>
+  <div align='center'>
+    <div class='dvuser'>
+      <label style='color:green;font-size:2.4vw' th:text="${'Hello, '+name}"></label>
+      <div class='dv'>
+       <label style='color:red;font-size:2.4vw'>You have been logged out successfully</label>
+      </div>
+      <div class='dv'>
+       <a href='login' class='an'>Click to re-login</a>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
